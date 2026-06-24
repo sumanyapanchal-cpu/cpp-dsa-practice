@@ -6,7 +6,7 @@ using namespace std;
 
 bool isPowerOfTwo(int n){
 
-    if(n <= 0){
+    if(n <= 0){ //0 ki condition remove krdi
         return false;
     }
 
