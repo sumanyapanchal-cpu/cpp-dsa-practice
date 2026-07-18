@@ -10,7 +10,7 @@ int main(){
     }
     
     int n;
-    cout << "enter size of array " << endl;
+    cout << "enter size of array \n" << endl;
     cin >> n;
     double price[n];
     cout << "enter price of n elements:" << endl;
@@ -19,7 +19,14 @@ int main(){
     {
        
         cin >> price[i];
-        cout << price[i] << endl;
+       
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+       
+        cout << price[i] << " ";
+       
     }
     
 }

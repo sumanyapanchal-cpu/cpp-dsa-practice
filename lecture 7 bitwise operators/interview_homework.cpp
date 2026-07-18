@@ -1,4 +1,5 @@
-/*#include<iostream>
+/*
+#include<iostream>
 using namespace std;
 
 // to find if a number is a power of 2 without using loops-
@@ -19,14 +20,14 @@ bool isPowerOfTwo(int n){
         else{
             n = n / 2;
         }
-            
-        
+
+
     }
 
-    return true; //bcoz jitne bh possibility thi not true ki wo humne eleminate krdi, like ab sari not true ki possibility hat gyo to true return krwaya
+    return true; //bcoz jitne bh possibility thi false ki wo humne eleminate krdi, like ab sari not true ki possibility hat gyo to true return krwaya
 }
 int main(){
-    
+
 int n = 36;
 
 
@@ -37,28 +38,47 @@ else{
     cout << "no";
 }
 cout << isPowerOfTwo(n) << endl;
-    
-    
+
+
     return 0;
 } */
 
-//ab actual ques without loop logic-
+// ab actual ques without loop logic-
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-bool isPower(int n){
-    return n>0 && (n & (n-1)) == 0;
+bool isPower(int n)
+{
+    return n > 0 && (n & (n - 1)) == 0; // shortcut way to write the return
 }
 
-int main(){
-    
+/*
+teri smjh me aaye easy wesa loop- BOTH ARE LITERALLY THE SAME THING
+bool isPower(int n){
 
-    int n = 36;
-    if(isPower(n)){
-        cout << "yes power of 2";
+    bool ans = false;
+
+    if(n > 0 && (n & (n-1)) == 0){
+        ans = true;
     }
     else{
+        ans = false;
+    }
+
+    return ans;
+}
+    */
+int main()
+{
+
+    int n = 36;
+    if (isPower(n))
+    {
+        cout << "yes power of 2";
+    }
+    else
+    {
         cout << "no not a power of 2";
     }
 

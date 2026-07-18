@@ -10,7 +10,7 @@ using namespace std;
 int kadane(vector<int>vec, int size){ //vector liya bcoz leetcode p vector hi kehte h array ko bhi
     int current_sum= 0;
     int max_sum = INT_MIN;
-    //for (int i = 0; i < size; i++) -wont work with vector since vector p for each loop chalta hai 
+    //for (int i = 0; i < size; i++) will work as well but we used this for simplicity 
     for(int value:vec)
     {
         current_sum += value; //isme vector[value] nhi likha since vector me for each loop me index uski value darshata hai na ki index

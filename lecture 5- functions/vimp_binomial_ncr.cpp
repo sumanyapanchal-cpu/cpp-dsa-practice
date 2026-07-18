@@ -29,11 +29,11 @@ int ncr(int n, int r){
     
 } */
 
-int factorial(int x){   //ek normal factorial ka factorial likha hai 
+int factorial(int x){   //ek normal factorial ka function likha hai 
     int fact = 1;
     for (int i = 1; i <= x; i++)
     {
-        fact *= i;
+        fact *= i; //fact = fact * i
     }
     return fact;
 }

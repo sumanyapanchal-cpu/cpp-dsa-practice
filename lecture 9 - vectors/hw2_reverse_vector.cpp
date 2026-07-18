@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+// WAF to reverse a vector (using 2 pointer method/approach)
 
 void reverseVector(vector<int> &vec, int size)
 {
@@ -27,9 +28,9 @@ int main()
     vector<int> vec = {1, 2, 3, 4};
     int size = vec.size();
 
-    reverseVector(vec, size);
+    reverseVector(vec, size); //u cannot directly cout this statement bcoz function ka return type is void
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++) //hence to actually cout we use this loop bcoz call by reference hai with pointers to actually me update hogya hai sara kuch 
     {
         cout << vec[i] << " ";
     }

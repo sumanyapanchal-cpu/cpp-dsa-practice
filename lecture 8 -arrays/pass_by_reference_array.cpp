@@ -3,7 +3,6 @@ using namespace std;
 
 void changeArr(int arr[], int size)
 {
-    cout << "in function" << endl;
     for (int i = 0; i < size; i++)
     {
         arr[i] = 2 * arr[i]; // double krra hai values ko
@@ -18,7 +17,7 @@ int main()
 
     for (int i = 0; i < 3; i++)
     {
-        cout << arr[i] << " ";
+        cout << arr[i] << " "; //it prints the updates values after the function and wo value change nhi hoti, toh ab jb jb array call kroge yehi values aaygi updated wali
     }
     cout << endl;
 

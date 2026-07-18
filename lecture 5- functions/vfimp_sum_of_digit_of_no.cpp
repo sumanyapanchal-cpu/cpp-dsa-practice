@@ -21,7 +21,7 @@ using namespace std;
         int digitSum=0;  //sum ko 0 se initialise kra
         while (num > 0) // bcoz say 145 hai toh 145 % 10 = 5, then 14 % 10 = 4 then 1% 10 = 0 isliye jbtk 0 na hojaye tb tk run krwao and 0 ko include nh krwana 
         {
-            int lastDigit = num % 10; //last digit
+            int lastDigit = num % 10; //last digit bcoz modulo gives the remainder and remainder is the last digit that we need to add to the sum 
             num = num/10;  // to remove last digit from the overall number
             digitSum += lastDigit; //sum me last digit add krdo
         }

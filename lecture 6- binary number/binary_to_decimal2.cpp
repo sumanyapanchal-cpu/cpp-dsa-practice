@@ -18,8 +18,8 @@ and in sare numbers ko then 020 aise jo bh aare hai sbko indivicually add krdo-
 */
 
 int binToDecimal(int binNum){
-    int ans=0, pow=1; //pow = 1 mtlb 2^0 hai abhi
-    while(binNum > 0){
+    int ans=0, pow=1; //pow = 1 mtlb 2^0 hai abhi starting from the rightmost value
+    while(binNum > 0){ // the while loop ensures ki 1010 ko 101 then 10 then 1 then 0 aise krna hai but 0 last number ko incllude nahi krna hai 
     
         int rem= binNum % 10 ; //remainder for last digit calculation
         binNum = binNum / 10; //ye hai taki number update ho ske previous numner ko hata k

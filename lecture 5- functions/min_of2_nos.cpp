@@ -2,14 +2,16 @@
 using namespace std;
 
 int min2no(int a, int b){
-    /*int min;
+    /*
+    int min;
     if(a>b){
         min = b;
     }
     else{
         min = a;
     }
-    return min; */
+    return min;
+     */
 
     if(a<b){
         return a;

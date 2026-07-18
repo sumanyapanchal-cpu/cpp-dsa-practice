@@ -12,6 +12,7 @@ STEP 3.) 1'S COMPONENT CALCULATE-- THAT IS TO FLIP ALL 0 WIHT 1 AND 1 WITH 0
              --> 10101
 
 STEP 4.) add +1 to the step 3
+
       1
 1 0 1 0 1
 +       1                          (1+1--> 10 and 1 carry over)
@@ -35,5 +36,5 @@ step 2. add +1
 0 1 0 0 1
 +       1
 ----------
- 0  1  0  1 0 -- and now 1010 we knwo is 10 isliye ye number -10 hai since already ye bh known tha ki number -ve hai 
+0 1 0 1 0 -- and now 1010 we knwo is 10 isliye ye number -10 hai since already ye bh known tha ki number -ve hai 
 */

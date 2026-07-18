@@ -8,7 +8,7 @@ int main()
     // to print the index at which smallest and largest number lies
 
     int arr[5] = {5, 4, 3, 2, 1};
-    int smallest = INT_MAX;
+    int smallest = INT_MAX; //ye wale variables kahi use hi nhai kre so problem
     int largest = INT_MIN;
     int smallest_index=0; //ye new variable banaya ab 
     int largest_index=0;
@@ -18,7 +18,7 @@ int main()
         smallest = min(arr[i], smallest);
         if (arr[i] == smallest) //issue - jb bh chota milta h kuch + infinity se wo print krre hai ye glt hai
         {
-            cout << i;
+            cout << i; //iske badle fix- smallest = arr[i] and smallest_index= i aise likhdo jese niche jra hai 
         } 
         
     }
@@ -68,11 +68,11 @@ int main()
         }
     }
 
-    cout << "Smallest element = " << smallest
-         << " at index " << smallestIndex << endl;
+    cout << "Smallest element = " << smallest << " at index " << smallestIndex << endl;
+         
 
-    cout << "Largest element = " << largest
-         << " at index " << largestIndex << endl;
+    cout << "Largest element = " << largest << " at index " << largestIndex << endl;
+         
 
     return 0;
 }

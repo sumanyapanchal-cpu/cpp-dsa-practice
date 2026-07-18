@@ -10,6 +10,7 @@ int intersection(int arr1[], int arr2[], int size1, int size2){
             if (arr1[i] == arr2[j])
             {
                 cout << arr1[i] << "\n";
+                count++;
             }
             
         }

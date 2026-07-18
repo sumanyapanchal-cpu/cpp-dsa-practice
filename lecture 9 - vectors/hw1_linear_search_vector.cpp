@@ -7,7 +7,7 @@ int linearSearch(vector<int>vec, int size, int target){ //ek vector of integer t
     for (int i = 0; i < size; i++)
     {
         if(vec[i] == target){
-            return i; //if found return i
+            return i; //if found return the index
             break;
         }
     }

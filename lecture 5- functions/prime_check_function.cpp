@@ -5,7 +5,7 @@ bool prime(int n)
 {
     bool isprime = true;
 
-    for(int i = 2; i <= n-1; i++)
+    for(int i = 2; i <= n-1; i++) // ye toh main logic hai 2 to n-1 check krne k liye
     {
         if(n % i == 0)
         {

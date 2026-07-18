@@ -16,7 +16,7 @@ int main()
     cout << "size after push back=" << vec.size() << endl; // gives 3 and jis order me push back kroge usi order me print hoge
     vec.pop_back();  // isme value btane ki zrurat nh last elemnt udd jyga and deleted 45
 
-    cout << "size after pop back=" << vec.size() << endl;
+    cout << "size after pop back=" << vec.size() << endl; // gives 2 since ek element ko pop back krdiya hai 
     for (int value : vec)
     { // using value instead of i (most common)
         cout << value << endl;

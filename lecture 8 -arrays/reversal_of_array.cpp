@@ -4,7 +4,7 @@
 using namespace std;
 
 void reverseArray(int arr[], int size){
-    int start = 0, end = size-1;
+    int start = 0, end = size-1; //here size-1 is indicating the last index jidhar se shuru kr skte ho
     while (start < end) //isko <= bh krdoge odd/even dono consider krte hue to bh koi dikkat nahi h 
     {
         swap(arr[start], arr[end]);
