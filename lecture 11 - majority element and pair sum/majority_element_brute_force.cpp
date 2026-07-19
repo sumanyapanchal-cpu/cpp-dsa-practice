@@ -7,7 +7,7 @@ int majority_element(vector<int> vec)
     int n = vec.size();
 
     
-    for (int value : vec)
+    for (int value : vec) //for each loop used taki index ki bajaye direct value access kr ske
     {
         int frequency = 0;
         for (int element : vec)

@@ -1,8 +1,9 @@
 #include<iostream>
+#include<climits>
 using namespace std;
 
 int maxSubArray(int arr[], int size){
-    int max_sum;
+    int max_sum = INT_MIN; //this is initialised now bcoz nahi toh garbage value bhi toh store ho skti thi uske ander and it could hamper with the results
 
     for (int st = 0; st < size; st++)
     {

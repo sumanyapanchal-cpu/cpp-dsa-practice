@@ -5,7 +5,7 @@ using namespace std;
 vector<int> sumPair(vector<int> vec, int target_value) //return type is vector<int> imp
 {
 
-    vector<int>ans; //since jo vector enter krwaya usme indexes push back nahi kroge islye
+    vector<int>ans; //since jo vector enter krwaya usme indexes push back nahi kroge islye and alag se ans me kroge
     int n = vec.size();
     int i =0, j= n-1;
 
@@ -24,7 +24,7 @@ vector<int> sumPair(vector<int> vec, int target_value) //return type is vector<i
             return ans;
         }
     }
-
+    return ans; //returns empty vector if no pair exists
 }
 
 int main()
@@ -40,6 +40,7 @@ int main()
    //and vec pr vec[2] likhne pr sahi value aygi
 
     
-    cout << ans[0] << " ," << ans[1]; //since index 0 and 2 ka sum 13 hai 
+    cout << ans[0] << "," << ans[1]; //since index 0 and 2 ka sum 13 hai 
+    //ab ans[0] and ans[1] hi push back kra bcoz "pair" that is 2 numbers that are ideally being pushed at 0 and 1st index only in an empty ans vector
     return 0;
 }
