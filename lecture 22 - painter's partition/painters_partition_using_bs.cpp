@@ -27,7 +27,7 @@ int painterPartition(vector<int>arr , int n, int m){
     int sum = 0, max_value = INT_MIN;
     for(int i = 0; i < arr.size(); i++){
         sum += arr[i];
-        max_value = max(arr[i], max_value);
+        max_value = max(arr[i], max_value); //ye basically range k liye hai ki range ki min/least value shuru hi max of arr se hogi bcoz agar 4 diff painter bh aagye toh max of arr[i] jitna time to lgega baki sb itne khali bethe rhege ilsiye 40 min to compulosry hai 4 painters me bhi
     }
     int st = max_value , end = sum;
     int ans = -1;

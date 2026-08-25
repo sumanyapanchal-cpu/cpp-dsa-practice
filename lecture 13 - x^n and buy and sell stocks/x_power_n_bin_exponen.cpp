@@ -11,6 +11,7 @@ double binaryExponent(double x, int n) //kuch types double kre hai taki -ve powe
     { // corner case
         return 0;
     }
+    
     if (x == 1)
     { // corner case
         return 1;

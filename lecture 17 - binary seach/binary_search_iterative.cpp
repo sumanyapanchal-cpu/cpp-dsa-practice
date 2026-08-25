@@ -28,7 +28,7 @@ int binarySearch(vector<int> vec, int tar)
 int main()
 {
     vector<int> vec = {0, -1, 3, 4, 5, 9, 12};
-    cout << binarySearch(vec, 12) << endl; // returns 6 as wo index hai
+    
     cout << binarySearch(vec, 12) << endl; // returns 6 as wo index hai jispr 12 hai
     return 0;
 }

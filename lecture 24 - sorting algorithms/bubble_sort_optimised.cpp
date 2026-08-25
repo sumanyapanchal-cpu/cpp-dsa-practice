@@ -1,5 +1,4 @@
 #include <iostream>
-#include <algorithm> //for sort function
 using namespace std;
 
 void bubbleSort(int arr[], int n)

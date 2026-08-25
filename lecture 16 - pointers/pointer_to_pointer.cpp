@@ -6,7 +6,7 @@ int main(){
     cout << &a << endl; 
     int * ptr = &a;
     int ** ptr2 = &ptr;
-
+    cout << *(*(&ptr2)) << endl;
     // dono niche wali lines ka output same hoga- 
 
     cout << &ptr << endl; //ye hai ptr ka khud ka address not the address of a that is stores
@@ -18,6 +18,6 @@ int main(){
     return 0;
 
     /*LOGIC- in notebook
-    and derefering nb se dekhlo khud hi
+    and derefering nb se dekhlo khud hi+
     */
 }

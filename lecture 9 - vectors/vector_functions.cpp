@@ -9,7 +9,7 @@ int main()
 
     cout << "initial size =" << vec.size() << endl; // gives 0
 
-    vec.push_back(25);
+    vec.push_back(25); // allocation in run time and hence dynamic memory allocation
     vec.push_back(35);
     vec.push_back(45);
 

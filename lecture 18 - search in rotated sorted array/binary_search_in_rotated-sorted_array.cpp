@@ -22,7 +22,7 @@ int search(vector<int> nums, int target)
             }
             else // agar right sorted hai toh else case
             {                 
-                st = mid + 1; // agar right sorted hai to BS ki ye condition hogi
+                st = mid + 1; // agar left half me nahi mila toh 100% right me hai (nothing to do with sorting- right or lefg)
             }
         }
         else
