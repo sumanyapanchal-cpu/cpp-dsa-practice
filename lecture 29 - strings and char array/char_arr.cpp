@@ -10,6 +10,9 @@ int main(){
 
     char str2[] = "hello world"; //spaces are also printed in the string and it is null terminated
     cout << str2 << endl; //since str2 is a character array and it is null terminated so it will print the string hello world
+
+    char str3[] = "hello";
+    cout << str3[5] << endl; //since str3 is a character array and it is null terminated so it will print the null character which is nothing but just some space
     
     return 0;
 }
