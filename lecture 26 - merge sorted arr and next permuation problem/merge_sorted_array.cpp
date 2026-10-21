@@ -4,7 +4,7 @@ using namespace std;
 
 void merge(vector<int> &a, int m, vector<int> &b, int n) //ye & bhut imp hai ye nahi lgaya toh niche wala arr print ka for loop run nhi krega and 123000 print krke dega ye alias pass by ref hai ye imp hai 
 {
-    int ind = m + n - 1;
+    int ind = m + n - 1; //bcoz this is the last index of the final array after merging
     int i = m - 1;
     int j = n - 1;
     while (i >= 0 && j >= 0)

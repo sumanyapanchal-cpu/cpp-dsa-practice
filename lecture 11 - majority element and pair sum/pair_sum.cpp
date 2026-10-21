@@ -28,7 +28,7 @@ vector<int> sumPair(vector<int> vec, int target_value) //return type is vector<i
 int main()
 {
     vector<int>vec = {2,7,11,15};
-    int target = 9;
+    int target = 26;
 
     vector<int> result = sumPair(vec,target);
     

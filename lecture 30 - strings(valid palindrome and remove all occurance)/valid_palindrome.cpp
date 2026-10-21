@@ -11,7 +11,7 @@ bool isPalindrome(string str)
     int st = 0, end = str.length() - 1;
     while (st < end)
     {
-        if (!isalnum(str[st]))
+        if (!isalnum(str[st])) //that  is start index pr jo value h wo alpha num nh h to ignore
         {
             st++;
             continue;

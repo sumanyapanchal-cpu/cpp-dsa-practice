@@ -13,7 +13,7 @@ int main(){
     {
         cout << q.front() << " "; // front element print kro
         q.pop(); // front element ko remove kro
-        // this loop prints it in the reverse fashion as queue is a FIFO data structure
+        // this loop prints it in the forward fashion as queue is a FIFO data structure
     }
 
     queue<int>q2;

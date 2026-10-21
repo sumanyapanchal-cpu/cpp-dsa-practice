@@ -14,23 +14,24 @@ bool isFreqSame(int freq1[] , int freq2[])
     return true;
 }
 
-bool checkInclusion(string s1, string s2)
+bool checkInclusion(string s2, string s1) //s2 = ab, s1= eidbaooo
 {
     int freq[26] = {0};
-    //to check the freq of s1 string
-    for(int i =0 ; i< s1.length() ; i++)
+    //to check the freq of s2 string (ab)
+    for(int i =0 ; i< s2.length() ; i++)
     {
-        freq[s1[i] - 'a']++;
+        freq[s2[i] - 'a']++;
     }
-    int winSize = s1.length();
-    for(int i =0 ; i<s2.length(); i++)
+    int winSize = s2.length();
+    for(int i =0 ; i<s1.length(); i++)
     {
-        int winIdx = 0; //init by zero
-        int idx = i; //ye normal index hai 
+        int winIdx = 0; //init by zero Characters counted in the current window Starts at zero and increases until we've counted winSize characters.
+
+        int idx = i; //ye starting index hai that tells ki kaha se next window begin hoga
         int windFreq[26] = {0}; //window index for comparision
-        while(winIdx < winSize && idx < s2.length())
+        while(winIdx < winSize && idx < s1.length())
         {
-            windFreq[s2[idx] - 'a']++; //here s2[idx] is normal s2 ka index
+            windFreq[s1[idx] - 'a']++; //here s1[idx] is normal s1 ka index
             winIdx++;
             idx++;
         }

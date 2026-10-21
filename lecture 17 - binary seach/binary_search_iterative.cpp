@@ -19,7 +19,7 @@ int binarySearch(vector<int> vec, int tar)
         }
         else if (tar == vec[mid])
         {
-            return st; // returns index but isme st ki jgh mid bh likh skte ho since mid is also the index
+            return mid; // returns index but isme st ki jgh mid bh likh skte ho since mid is also the index
         }
     }
     return -1;

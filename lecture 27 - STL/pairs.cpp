@@ -26,5 +26,9 @@ int main()
 
     vec.push_back({4, 5}); // or vec.push_back(make_pair(4, 5));
     vec.emplace_back(5,6); // emplace_back is more efficient than push_back as it constructs the pair in place by itslef and u dont need to declare the pair in curly brkts seperately
+    for (int i = 0; i < vec.size(); i++)
+    {
+        cout << vec[i].first << " " << vec[i].second << endl; // or use a for each loop
+    }
     return 0;
 }
