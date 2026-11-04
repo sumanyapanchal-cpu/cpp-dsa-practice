@@ -63,7 +63,7 @@ bool isSafe(vector<string> &board, int row, int col, int n)
         }
     }
 
-    vector<vector<string>> solveNQueens(int n) {
+    vector<vector<string>> solveNQueens(int n) { //actual fxn given in lc
         vector<string> board (n , string(n , '.')); //that is .q.. is a string and aisa ek vector hai called board
         //and init by . in every place such that string ho .... n size ki init by dot
         vector<vector<string>> ans ; 
@@ -74,5 +74,15 @@ bool isSafe(vector<string> &board, int row, int col, int n)
 
 int main()
 {
+    int n = 4;
+    vector<vector<string>> ans = solveNQueens(n);
+    for(const auto& val : ans)
+    {
+        for(const auto& row : val)
+        {
+            cout << row << endl;
+        }
+        cout << endl;
+    }
     return 0;
 }
