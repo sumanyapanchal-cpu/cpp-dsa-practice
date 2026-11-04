@@ -1,0 +1,23 @@
+
+# Compiled executable files
+*.exe
+*.out
+*.o
+
+# Debug files
+*.pdb
+*.ilk
+*.obj
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
